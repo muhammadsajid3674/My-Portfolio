@@ -1,110 +1,145 @@
-import AnimatedText from '@/components/AnimatedText'
-import { GithubIcon } from '@/components/Icon'
-import Layout from '@/components/Layout'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import Project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
-import Project2 from '../../public/images/projects/agency-website-cover-image.jpg'
+import AnimatedText from "@/components/AnimatedText";
+import { GithubIcon } from "@/components/Icon";
+import Layout from "@/components/Layout";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import Project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import Project2 from "../../public/images/projects/agency-website-cover-image.jpg";
 
 const FeaturedProject = ({ link, img, title, type, summary, github }) => {
-    return (
-        <article className='w-full flex items-center justify-center rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
-            <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto' />
-            </Link>
-            <div className='w-1/2 flex flex-col items-left justify-center pl-6'>
-                <span className='text-primary font-medium text-xl'>{type}</span>
-                <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
-                    <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
-                </Link>
-                <p className='my-2 font-medium text-dark'>{summary}</p>
-                <div className='mt-2 flex text-center'>
-                    <Link href={github} target='_blank' className='w-10'>
-                        <GithubIcon />
-                    </Link>
-                    <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold'>Visit Projects</Link>
-                </div>
-            </div>
-        </article>
-    )
-}
+  return (
+    <article className="w-full flex items-center justify-center rounded-3xl rounded-br-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl" />
+      <Link
+        href={link}
+        target="_blank"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+      >
+        <Image src={img} alt={title} className="w-full h-auto" />
+      </Link>
+      <div className="w-1/2 flex flex-col items-left justify-center pl-6">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+        </Link>
+        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
+        <div className="mt-2 flex text-center">
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
+          </Link>
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 rounded-lg bg-dark text-light dark:hover:bg-light dark:hover:text-dark p-2 px-6 text-lg font-semibold"
+          >
+            Visit Projects
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
 const Project = ({ link, img, title, type, github }) => {
-    return (
-        <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
+  return (
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:bg-dark  dark:border-light p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl" />
 
-            <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto' />
-            </Link>
-            <div className='w-full flex flex-col items-left justify-center mt-4'>
-                <span className='text-primary font-medium text-xl'>{type}</span>
-                <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
-                    <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
-                </Link>
-                <div className='mt-2 flex text-center justify-between'>
-                    <Link href={link} target='_blank' className='text-lg font-semibold underline'>Visit</Link>
-                    <Link href={github} target='_blank' className='w-8'>
-                        <GithubIcon />
-                    </Link>
-                </div>
-            </div>
-        </article>
-    )
-}
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
+      >
+        <Image src={img} alt={title} className="w-full h-auto" />
+      </Link>
+      <div className="w-full flex flex-col items-left justify-center mt-4">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+        </Link>
+        <div className="mt-2 flex text-center justify-between">
+          <Link
+            href={link}
+            target="_blank"
+            className="text-lg font-semibold underline"
+          >
+            Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-8">
+            <GithubIcon />
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
 const projects = () => {
-    return (
-        <>
-            <Head>
-                <title>Sajid | Projects Page</title>
-                <meta name="description" content="Generated by create next app" />
-            </Head>
-            <main className='w-full mb-16 flex flex-col items-center justify-center'>
-                <Layout className='pt-16'>
-                    <AnimatedText text={"Imagination Trump Knowledge!"} className='mb-16' />
-                    <div className='grid grid-cols-12 gap-24 gap-y-32'>
-                        <div className='col-span-12'>
-                            <FeaturedProject
-                                title={"Crypto Screener Application"}
-                                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+  return (
+    <>
+      <Head>
+        <title>Sajid | Projects Page</title>
+        <meta name="description" content="Generated by create next app" />
+      </Head>
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+        <Layout className="pt-16">
+          <AnimatedText
+            text={"Imagination Trump Knowledge!"}
+            className="mb-16"
+          />
+          <div className="grid grid-cols-12 gap-24 gap-y-32">
+            <div className="col-span-12">
+              <FeaturedProject
+                title={"Crypto Screener Application"}
+                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                             It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                             local currency.`}
-                                link="/"
-                                github="/"
-                                type={"Featured Project"}
-                                img={Project1}
-                            />
-                        </div>
-                        <div className='col-span-6'>
-                            <Project
-                                title={"Crypto Screener Application"}
-                                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                link="/"
+                github="/"
+                type={"Featured Project"}
+                img={Project1}
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title={"Crypto Screener Application"}
+                summary={`A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                             It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                             local currency.`}
-                                link="/"
-                                github="/"
-                                type={"Featured Project"}
-                                img={Project1}
-                            />
-                        </div>
-                        <div className='col-span-6'>
-                            <Project
-                                title={"React Portfolio Website"}
-                                summary={`A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+                link="/"
+                github="/"
+                type={"Featured Project"}
+                img={Project1}
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title={"React Portfolio Website"}
+                summary={`A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
                                 page transitions, cool background effects, unique design and it is mobile responsive.`}
-                                link="/"
-                                github="/"
-                                type={"Featured Project"}
-                                img={Project2}
-                            />
-                        </div>
-                    </div>
-                </Layout>
-            </main>
-        </>
-    )
-}
+                link="/"
+                github="/"
+                type={"Featured Project"}
+                img={Project2}
+              />
+            </div>
+          </div>
+        </Layout>
+      </main>
+    </>
+  );
+};
 
-export default projects
+export default projects;
