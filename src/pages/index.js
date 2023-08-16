@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
-        <div className="absolute right-8 bottom-8 inline-block w-24">
+        <div className="absolute right-8 bottom-8 inline-block w-24 sm:hidden">
           <Image src={lightBulb} alt="Sajid" className="w-full h-auto" />
         </div>
       </main>

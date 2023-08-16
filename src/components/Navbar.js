@@ -60,7 +60,7 @@ const Navbar = () => {
     setOpen(!isOpen);
   };
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative">
+    <header className="w-full px-32 py-8 xl:p-24 lg:p-16 md:p-12 sm:p-8 font-medium flex items-center justify-between dark:text-light relative">
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
@@ -219,24 +219,6 @@ const Navbar = () => {
               className="w-6 mx-3"
             >
               <LinkedInIcon />
-            </motion.a>
-            <motion.a
-              href="/"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
-            >
-              <PinterestIcon />
-            </motion.a>
-            <motion.a
-              href="/"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
-            >
-              <DribbbleIcon />
             </motion.a>
             <motion.button
               whileHover={{ y: -2 }}
