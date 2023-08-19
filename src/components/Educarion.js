@@ -46,23 +46,23 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            place={"Massachusetts Institute Of Technology (MIT)"}
-            time={"2016-2020"}
+            type={"Bachelor Of Science In Software Engineering"}
+            place={"Indus University"}
+            time={"2023-present"}
             info={`Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
                         Intelligence.`}
           />
           <Details
-            type={"Master Of Computer Science"}
-            place={"Stanford University"}
-            time={"2020-2022"}
+            type={"Web and Mobile App Hybrid Developer"}
+            place={"Saylani Mass IT Training"}
+            time={"2020-2021"}
             info={`Completed a master's project on deep learning, developing a new neural network architecture for natural 
                         language understanding.`}
           />
           <Details
             type={"Online Coursework"}
-            place={"Coursera And EdX"}
-            time={"2016-2020"}
+            place={"Coursera And Udemy"}
+            time={"2022-present"}
             info={`Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
                         Learning Engineering.`}
           />

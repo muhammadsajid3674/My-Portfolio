@@ -53,24 +53,32 @@ const Experiance = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position={"Software Engineer"}
-            address={"Mountain View, CA"}
-            company={"Google"}
-            companyLink={"www.google.com.pk"}
-            time={"2022-Present"}
-            work={`Worked on a team responsible for developing new features for Google's 
-                        search engine, including improving the accuracy and relevance of search results and 
-                        developing new tools for data analysis and visualization.`}
+            position={"MERN Stack Developer"}
+            address={"Muhammad Ali Society, Karachi"}
+            company={"Digitrends"}
+            companyLink={"www.digitrends.pk"}
+            time={"2022-present"}
+            work={`To remain competitive, front-end developers must stay current with the latest technologies
+            and design trends Frontend developers must ensure that their
+            code is well-organized, easy to read, and optimized for performance. Frontend developers
+            often work closely with designers to ensure that the UI meets the design
+            specifications, and with backend developers to integrate the frontend code with
+            the backend logic.
+            `}
           />
           <Details
-            position={"Intern"}
-            address={"Menlo Park, CA."}
-            company={"Facebook"}
-            companyLink={"www.facebook.com.pk"}
-            time={"Summer 2021"}
-            work={`Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-                        share short-form video content, including designing and implementing a new user interface and developing 
-                        the backend infrastructure to support the feature.`}
+            position={"Front-End Engineer"}
+            address={"Muhammad Ali Society, Karachi"}
+            company={"Digitrends"}
+            companyLink={"www.digitrends.co"}
+            time={"2021-2022"}
+            work={`This includes creating the layout,
+            navigation, and visual components of a web application or website. Frontend developers must ensure that their
+            code is well-organized, easy to read, and optimized for performance. Frontend developers
+            often work closely with designers to ensure that the UI meets the design
+            specifications, and with backend developers to integrate the frontend code with
+            the backend logic.
+            `}
           />
         </ul>
       </div>

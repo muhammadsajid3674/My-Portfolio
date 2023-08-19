@@ -102,16 +102,16 @@ const Navbar = () => {
             className="mx-4"
             toggle={handleClick}
           />
-          <CustomLink
+          {/* <CustomLink
             href="/articles"
             title="Articles"
             className="mx-4"
             toggle={handleClick}
-          />
+          /> */}
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="/"
+            href="https://github.com/muhammadsajid3674"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -120,7 +120,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://twitter.com/sajidshahid6"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -129,31 +129,13 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/sajid-shahid-926964213"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mx-3 sm:mx-1"
           >
             <LinkedInIcon />
-          </motion.a>
-          <motion.a
-            href="/"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3 sm:mx-1"
-          >
-            <PinterestIcon />
-          </motion.a>
-          <motion.a
-            href="/"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3 sm:mx-1"
-          >
-            <DribbbleIcon />
           </motion.a>
           <motion.button
             whileHover={{ y: -2 }}
@@ -186,15 +168,15 @@ const Navbar = () => {
               title="Projects"
               toggle={handleClick}
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               href="/articles"
               title="Articles"
               toggle={handleClick}
-            />
+            /> */}
           </nav>
           <nav className="flex items-center justify-center flex-wrap">
             <motion.a
-              href="/"
+              href="https://github.com/muhammadsajid3674"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -203,7 +185,7 @@ const Navbar = () => {
               <GithubIcon />
             </motion.a>
             <motion.a
-              href="/"
+              href="https://twitter.com/sajidshahid6"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -212,7 +194,7 @@ const Navbar = () => {
               <TwitterIcon />
             </motion.a>
             <motion.a
-              href="/"
+              href="https://www.linkedin.com/in/sajid-shahid-926964213"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
