@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>Sajid | Home Page</title>
-        <meta name="description" content="Welcome to Sajid's Portfolio - A Full Stack Developer showcasing expertise in web development. Explore innovative projects, a detailed 'About' section, and insightful articles. Enhance your digital experience with a diverse skill set." />
+        <meta name="description" content="Welcome to Sajid&#39;s Portfolio - A Full Stack Developer showcasing expertise in web development. Explore innovative projects, a detailed About section, and insightful articles. Enhance your digital experience with a diverse skill set." />
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
