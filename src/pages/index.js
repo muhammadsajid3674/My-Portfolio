@@ -13,12 +13,12 @@ export default function Home() {
     <>
       <Head>
         <title>Sajid | Home Page</title>
-        <meta name="description" content="Welcome to Sajid's Portfolio - A Full Stack Developer showcasing expertise in web development. Explore innovative projects, a detailed 'About' section, and insightful articles. Enhance your digital experience with a diverse skill set." />
+        <meta name="description" content="Welcome to Sajid&#39;s Portfolio - A Full Stack Developer showcasing expertise in web development. Explore innovative projects, a detailed About section, and insightful articles. Enhance your digital experience with a diverse skill set." />
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
+          <div className="flex items-center justify-center w-full">
+            {/* <div className="w-1/2 md:w-full">
               <Image
                 src={profilePic}
                 alt="Sajid"
@@ -26,16 +26,19 @@ export default function Home() {
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
-            </div>
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
+            </div> */}
+            <div className="w-10/12 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left xl:!left-5xl lg:!text-center lg:text-6xl md:!text-5xl sm:!text-3xl"
+                className="!text-6xl xl:!left-5xl lg:!text-center lg:text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium dark:text-light">
-                Unveiling Mastery in Web Development, Front-end, Back-end, and Innovative Projects. Explore Expertise in Coding, UI/UX, and Tech Solutions. Elevate Your Digital Presence with a Proven Track Record of Delivering Exceptional Web Experiences.
+              <p className="my-4 text-center font-medium dark:text-light">
+                As a skilled full-stack developer, I am dedicated to turning
+                ideas into innovative web applications. Explore my latest
+                projects and articles, showcasing my expertise in React.js and
+                web development.
               </p>
-              <div className="flex items-center self-start mt-2 lg:self-center">
+              <div className="flex items-center mt-2 lg:self-center">
                 <Link
                   href="/public/resume.pdf"
                   download={true}

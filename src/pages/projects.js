@@ -121,7 +121,7 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title={"Account Till"}
-                summary={`This is a side project I've been working on. A full stack invoicing application made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed for freelancers and small businesses, but can be used for almost any type of business need. `}
+                summary={`This is a side project I&#39;ve been working on. A full stack invoicing application made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed for freelancers and small businesses, but can be used for almost any type of business need. `}
                 link="https://accountill.com/"
                 github="https://github.com/muhammadsajid3674"
                 type={"Featured Project"}

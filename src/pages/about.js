@@ -57,7 +57,7 @@ const about = () => {
               </p>
 
               <p className="font-medium">
-                Collaborate with Sajid to unlock the true potential of your digital presence. Experience the fusion of coding mastery, UI/UX brilliance, and tech-driven solutions that propel businesses forward in today's competitive online landscape.
+                Collaborate with Sajid to unlock the true potential of your digital presence. Experience the fusion of coding mastery, UI/UX brilliance, and tech-driven solutions that propel businesses forward in today&#39;s competitive online landscape.
               </p>
             </div>
             <div className="col-span-3 xl:col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8 md:order-1 md:col-span-8">
